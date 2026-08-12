@@ -20,6 +20,14 @@ ModForge  ──(text+emotion+ref, --out path)──►  voicegen.py  ──► 
 | `voicegen.sh` | 舊 wrapper(`venv_voice` py3.12),已被 f5 取代,留參考 |
 | `PROTOCOL.md` | ModForge ↔ voicegen 的合約規格(args / wav / exit code / engine 行為) |
 
+## 離線測試
+
+不需 TTS 模型或遊戲資料：
+
+```bash
+python -m unittest discover -s tests -v
+```
+
 ## 使用
 
 ```bash

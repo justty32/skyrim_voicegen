@@ -26,8 +26,9 @@ ModForge 對 `MODFORGE_TTS_BIN`(本 repo 的 `voicegen-f5.sh` → `voicegen.py`)
 
 ## 回傳合約
 
-- **成功**:`--out` 路徑出現一個合法 `.wav`,process **exit 0**。
+- **成功**:`--out` 路徑原子發布一個非空、結構完整的 RIFF/WAVE 檔,process **exit 0**。engine 先寫同目錄暫存檔；驗證成功才取代既有 `--out`。
 - **失敗**:**exit 非 0**,診斷寫 **stderr**。ModForge 看到非 0 或 `--out` 不存在 → 該行記 TTS 失敗、跳過(不會塞半成品)。
+- engine exit 0 但沒產生 WAV、產生空檔／截斷檔時仍視為失敗；既有 `--out` 保持不動，暫存檔會清理。
 - stdout 僅供人看,ModForge 不解析。
 
 ## 引擎對情緒/表情的處理(engine 內政)
