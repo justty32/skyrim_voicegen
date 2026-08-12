@@ -28,6 +28,11 @@ ModForge  ──(text+emotion+ref, --out path)──►  voicegen.py  ──► 
 python -m unittest discover -s tests -v
 ```
 
+同層有 `ModForge` checkout 且可找到 Python/.NET 時，ModForge 的離線 suite 還會跑
+production live contract：`Voice.GenerateWav()` 經測試建立的 Windows/POSIX wrapper 真正
+啟動本 repo 的 `voicegen.py`，再由 `tests/fake_fish_engine.py` 產 deterministic 小 WAV。
+這條測試不載 Fish/F5 模型；缺 sibling repo 或 Python 時會明示 skip。
+
 ## 使用
 
 ```bash

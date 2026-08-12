@@ -31,6 +31,15 @@ ModForge 對 `MODFORGE_TTS_BIN`(本 repo 的 `voicegen-f5.sh` → `voicegen.py`)
 - engine exit 0 但沒產生 WAV、產生空檔／截斷檔時仍視為失敗；既有 `--out` 保持不動，暫存檔會清理。
 - stdout 僅供人看,ModForge 不解析。
 
+## 離線 live contract
+
+`ModForge/tests/ModForge.Core.Tests/VoiceLiveContractTests.cs` 由 production
+`Voice.GenerateWav()` 真正 exec 本 repo 的 `voicegen.py`；只有最末端 engine 換成
+`tests/fake_fish_engine.py`，因此不需下載或載入模型。測試覆蓋完整參數（含空白路徑）、
+合法 RIFF/WAVE 回傳，以及 engine 非零、缺輸出、header-only、截斷輸出時的 fail-closed 與
+staging 清理。測試會同時建立 Windows `.cmd` 與 POSIX `.sh` wrapper，並執行當前平台版本；
+缺 sibling checkout 或 Python runtime 時明示 skip。
+
 ## 引擎對情緒/表情的處理(engine 內政)
 
 協議**永遠**把 `--emotion`/`--intensity`/`--exaggeration`/`--language` 交出去;engine 自己決定用或不用:
