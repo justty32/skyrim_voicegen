@@ -20,6 +20,6 @@ skyrim-voicegen = **ModForge 的語音合成基石工具：收「臺詞＋情緒
 
 ## 專案摘要
 
-Python 為主：`voicegen.py` 實作協議，`voicegen-f5.sh` 是正式 wrapper（在 `.venvs/f5` 內跑）。離線測試用 `tests/fake_fish_engine.py`，不載 TTS 模型（6 項）。真正合成需要本機 venv、GPU 與 ref clip，這些都不進 repo（見 [dev-env.md](wf/workflows/dev-env.md)）。根目錄的 `__pycache__/` 已被 `.gitignore`，不准 add。
+Python 為主：`voicegen.py` 實作協議，`voicegen-f5.sh` 是正式 wrapper（在 `.venvs/f5` 內跑）。離線測試用 `tests/fake_fish_engine.py`，不載 TTS 模型（4 項）。真正合成需要本機 venv、GPU 與 ref clip，這些都不進 repo（見 [dev-env.md](wf/workflows/dev-env.md)）。根目錄的 `__pycache__/` 已被 `.gitignore`，不准 add。
 
 <!-- wf-kernel v0.6+368468a (2026-10-26 導入) -->

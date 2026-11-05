@@ -23,7 +23,7 @@
 
 | 做什麼 | 指令 | 備註 |
 |--------|------|------|
-| 離線測試 | `python -m unittest discover -s tests -v` | 6 項；不需模型或遊戲資料 |
+| 離線測試 | `python -m unittest discover -s tests -v` | 4 項；不需模型或遊戲資料 |
 | 真實合成（經 wrapper） | `MODFORGE_TTS_BIN=<repo>/voicegen-f5.sh`，由 ModForge `voicelines`／`scripts/ship-voice.sh` 呼叫 | 需 `.venvs/f5` 與 GPU；agent 離線驗證不跑 |
 
 驗證與測試指令不列這裡——連同「誰跑」一起在 [testing](testing.md)。

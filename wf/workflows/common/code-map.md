@@ -9,7 +9,7 @@
 | 領域 | 檔案 | 職責 | 測試在哪 |
 |------|------|------|---------|
 | 協議與 engine | `voicegen.py` | args 解析、engine 分派（f5／fish-s2）、wav 原子發布與驗證 | `tests/test_voicegen.py` |
-| wrapper | `voicegen-f5.sh`、`voicegen.sh` | 選 venv 並 exec `voicegen.py` | `tests/test_wrappers.py` |
+| wrapper | `voicegen-f5.sh`、`voicegen.sh` | 選 venv 並 exec `voicegen.py` | （無自動測試） |
 | fake engine | `tests/fake_fish_engine.py` | ModForge live contract 用的 deterministic 小 WAV 產生器 | （被上兩者使用） |
 
 
