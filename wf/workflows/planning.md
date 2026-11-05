@@ -1,5 +1,9 @@
 # planning — 想法成熟管線（idea → roadmap → 詳規 → 執行）
 
+
+<!-- local -->
+> 本 repo 的封存、archive 與日誌保留指示由 [STRUCTURE 本地覆寫](../STRUCTURE.md#archive-規則)取代：過時即刪；刪除仍須符合授權規定。以下 kernel 原文保留供升級比對。
+<!-- /local -->
 [WORKFLOWS](../WORKFLOWS.md)｜[INDEX](../INDEX.md)
 
 從萌芽到動工的四階段收在**同一條管線**，不拆成四個工作流——免得卡在「這算 idea 還是 roadmap」。

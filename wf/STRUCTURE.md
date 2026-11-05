@@ -60,11 +60,20 @@
 
 ## archive 規則
 
+> **本 repo 已由下方 local 段「過時即刪」取代（2026-11-05）；以下為 kernel 原文，升級時照抄、不照做。**
+
 - 過時 / 被取代的文檔搬進**所屬工作流**的 `archive/`（共享的進 `common/archive/`），**不刪**、不在維護鏈。
 - 檔名保留原名；檔頭第一行加 `> 封存 YYYY-MM-DD，由 <取代它的路徑> 取代`（沒有取代者就寫原因）。
 - **指向被封存檔的連結從活文件拿掉**（改純文字或刪句），**當它不存在**；不改指到 `archive/` 路徑。
 - `archive/` 內**只有 `README.md` 索引**（可省略；一列一檔：檔名、封存日期、取代者或原因；**只准追加列**），是唯一可以連進 `archive/` 的地方；不套大小門檻、不維護內部連結。
 - 工作流若依協議用 `done/`／`superseded/` 分層（如 dispatch 的 handoff），同樣視為封存、不套門檻、lint 不下鑽；放信的 `inbox/`（含 `done/`）是寄件原文、比照處理（`workflows/inbox/` 是工作流文件，照掃）。
+
+
+<!-- local -->
+**本地覆寫（2026-11-05 起，取代上段及本文其他封存指示）：過時即刪。** 過時／被取代／已結案的文件與紀錄直接 `git rm`，不再建 `archive/`、`done/`、`superseded/`、`history/`，追溯靠 `git log --all -- <路徑>`。刪前把仍被引用的結論吸收進活文件、連結改純文字；commit 訊息寫「刪除：<理由>」。例外：成品與被 hash／manifest 釘住的檔。刪除仍須符合 AGENTS.md 的授權規定。
+
+保留期：場次夾 30 天或最近 5 場（取較多）；`SESSION-LOG.md` ≤ 2 KB、`NEXT-SESSION.md` ≤ 4 KB、`STATE.md` ≤ 8 KB；信件 ack 後、結案項即刪；`wf/user/` 頁用畢 30 天刪、HTML 不進版控；`qa/reports/`、`tidy/reports/` 留最近 2 批。上述項目僅在本 repo 存在時適用。
+<!-- /local -->
 
 ## 日誌寫法
 

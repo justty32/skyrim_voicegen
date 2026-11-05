@@ -1,5 +1,9 @@
 # common — 跨工作流共享（入口）
 
+
+<!-- local -->
+> 本 repo 的封存、archive 與日誌保留指示由 [STRUCTURE 本地覆寫](../../STRUCTURE.md#archive-規則)取代：過時即刪；刪除仍須符合授權規定。以下 kernel 原文保留供升級比對。
+<!-- /local -->
 [INDEX](../../INDEX.md)
 
 各工作流共用的東西。

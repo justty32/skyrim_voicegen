@@ -1,5 +1,9 @@
 # feature-dev — 功能開發 / 修 bug（工作流入口）
 
+
+<!-- local -->
+> 本 repo 的封存、archive 與日誌保留指示由 [STRUCTURE 本地覆寫](../../STRUCTURE.md#archive-規則)取代：過時即刪；刪除仍須符合授權規定。以下 kernel 原文保留供升級比對。
+<!-- /local -->
 [WORKFLOWS](../../WORKFLOWS.md)｜[INDEX](../../INDEX.md)
 
 改變行為的工作：加一個功能、修一個 bug，從動手到 commit。碰原始碼前先讀 [common/conventions](../common/conventions.md) 與 [common/code-map](../common/code-map.md)。

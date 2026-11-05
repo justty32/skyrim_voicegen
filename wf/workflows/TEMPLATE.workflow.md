@@ -1,5 +1,9 @@
 # <名稱> — <一句話：做什麼>
 
+
+<!-- local -->
+> 本 repo 的封存、archive 與日誌保留指示由 [STRUCTURE 本地覆寫](../STRUCTURE.md#archive-規則)取代：過時即刪；刪除仍須符合授權規定。以下 kernel 原文保留供升級比對。
+<!-- /local -->
 [WORKFLOWS](../WORKFLOWS.md)｜[INDEX](../INDEX.md)
 
 > 複製本檔改寫成 `workflows/<名稱>.md`（單檔型）或 `workflows/<名稱>/README.md`（資料夾型，連結多一層 `../`）。段落順序固定，用不到的刪掉；改完在 WORKFLOWS.md 加一列。
