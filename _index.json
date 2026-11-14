@@ -1,0 +1,29 @@
+{
+  "AGENTS.md": {
+    "description": "agent 專案備忘與最頂層路由；進 repo 先讀這份"
+  },
+  "CLAUDE.md": {
+    "description": "指標檔，指向 AGENTS.md"
+  },
+  "PROTOCOL.md": {
+    "description": "與 ModForge 之間唯一的 CLI 協議（args 進、一個 wav 出）；改介面前必讀"
+  },
+  "README.md": {
+    "description": "專案總覽：收臺詞＋情緒＋參考嗓音、吐 wav 的語音合成基石工具"
+  },
+  "tests": {
+    "description": "voicegen 測試與假 Fish 引擎"
+  },
+  "voicegen-f5.sh": {
+    "description": "現行 wrapper，在 F5 venv 內跑 voicegen.py；MODFORGE_TTS_BIN 指向它"
+  },
+  "voicegen.py": {
+    "description": "主程式：合成入口，依 engine 產出 wav"
+  },
+  "voicegen.sh": {
+    "description": "舊版 wrapper（舊 venv），僅留作參考"
+  },
+  "wf": {
+    "description": "本 repo 的工作流文檔（INDEX、SESSION-LOG、STRUCTURE、WORKFLOWS 與 workflows/）"
+  }
+}
